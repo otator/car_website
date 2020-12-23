@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cars</title>
+    
 </head>
 <body>
     <header>
@@ -19,9 +20,31 @@
     <hr>
     </header>
     
-    <main>
+    <main id ='main'>
         <h1 style="text-align: center;">Car Deal</h1>
         <h2 style="text-align: center;"><em>You can survive without our cars, But you won't be happy</em></h2>
+       
+        <script>
+            var client = prompt("Please Enter Your name");
+            var age = prompt('Welcome ' + client + ' Enter Your age to get a discount');
+            var discount;
+            document.write('<h3 style="text-align: center;">Welcome <strong>' + client + ' </strong> to our website</h3>');
+            if(age < 18 || age > 60){
+                discount = 15;
+                document.write('<h3 style="text-align: center;">your age is: ' + age + ' and your discount is: ' + discount + '%</h3>');
+            }else{
+                discount = 0;
+                document.write('<h3 style="text-align: center;">your age is: ' + age + ' and your discount is: ' + discount + '%</h3>');
+            }
+            var isColorChanged = confirm("Would you like to change the background number");
+            if(isColorChanged){
+                var color = prompt("Enter color like this: #121212"); 
+                document.getElementById('main').style.background = color;
+            }else{
+                alert("Never mind");
+            }
+        </script>
+
         <img src="https://image.freepik.com/free-photo/client-shaking-hand-woman_13339-39195.jpg"
         style="  display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
     </main>
