@@ -24,9 +24,16 @@
         <h1 style="text-align: center;">Car Deal</h1>
         <h2 style="text-align: center;"><em>You can survive without our cars, But you won't be happy</em></h2>
        
+
         <script>
-            var client = prompt("Please Enter Your name");
+            var client = prompt("Please enter your name");
+            while(client ==='' || client ===null){
+                 client = prompt("Please enter valid name");
+            }
             var age = prompt('Welcome ' + client + ' Enter Your age to get a discount');
+            while(age<1 || age > 120){
+                age = prompt('Welcome ' + client + '  please entervalid age to get a discount');
+            }
             var discount;
             document.write('<h3 style="text-align: center;">Welcome <strong>' + client + ' </strong> to our website</h3>');
             if(age < 18 || age > 60){
@@ -45,8 +52,28 @@
             }
         </script>
 
+
         <img src="https://image.freepik.com/free-photo/client-shaking-hand-woman_13339-39195.jpg"
         style="  display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
+        <script>
+
+            var choose = prompt("Enter 1 for Mercedes and 2 for BMW");
+            while(choose < 1 || choose > 2){
+                choose = prompt("please enter valid input\nEnter 1 for Mercedes and 2 for BMW");
+            }
+            if (choose ==1){
+                alert("You chose Mercedes");
+                for(var i =1; i<=5; i++){
+                    document.write('<table><tr><td><h1>' + i + '</h1></td><td><img src = "https://www.automasti.com/blog/wp-content/uploads/2020/10/c-classmodelimage.jpg"/></td></tr></table>');
+                }
+            }
+            else if (choose ==2){
+                alert("You chose BMW")
+                for(var i =1; i<=5; i++){
+                    document.write('<table><tr><td><h1>' + i + '</h1></td><td><img src = "https://s.aolcdn.com/dims-global/dims3/GLOB/legacy_thumbnail/788x525/quality/85/https://s.aolcdn.com/commerce/autodata/images/USC90BMC681A021001.jpg"/>+</td></tr></table>');
+                }
+            }
+        </script>
     </main>
     <hr>
 <footer>
