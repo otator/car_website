@@ -1,0 +1,19 @@
+.container h1{
+    font-size: 100px;
+    color : #000000;
+    text-align: center;
+}
+h2, h3{
+    text-align: center;
+}
+.container img {
+    display: inline;
+    height : 150px;
+    width: 150px;
+}
+body{
+    background-color: #7BEB9A;
+}
+header{
+    background-color: rgba(0,255,0,0.2);
+}
