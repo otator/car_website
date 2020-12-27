@@ -1,6 +1,6 @@
 .container h1{
     font-size: 100px;
-    color : #000000;
+    color : hsl(0, 0%, 0%);
     text-align: center;
 }
 h2, h3{
